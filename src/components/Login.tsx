@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 
 interface LoginFormProps {
   onLogin: (username: string, password: string) => void;
@@ -20,7 +20,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
     try {
       const response = await axios.post("https://localhost:8000/api", {
         username,
-        password
+        password,
       });
       if (response.data.authenticated) {
         onLogin(username, password);

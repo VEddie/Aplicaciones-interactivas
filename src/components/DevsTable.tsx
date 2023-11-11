@@ -1,7 +1,14 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Button, Table } from 'react-bootstrap';
-import { Developer, loadDevelopers } from '../api/apiClient';
+
+interface Developer {
+    first_name: string;
+    last_name: string;
+    email: string;
+    age: number;
+    country: string;
+}  
 
 const DevsTable = () => {
 

@@ -22,10 +22,6 @@ const ModalButtonLogin = () => {
                 <Modal.Body>
                     <LoginForm />
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant='primary'>Iniciar sesión</Button>
-
-                </Modal.Footer>
             </Modal>
         </>
     );

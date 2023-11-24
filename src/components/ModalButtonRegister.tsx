@@ -22,9 +22,6 @@ const ModalButtonRegister = () => {
                 <Modal.Body>
                     <RegisterForm />
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant='primary'>Registrar</Button>
-                </Modal.Footer>
             </Modal>
         </>
     );
